@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"1": "ukyo:items/dark_repulser1",
-		"2": "ukyo:items/dark_repulser2",
-		"3": "ukyo:items/dark_repulser3",
-		"particle": "ukyo:items/dark_repulser2"
+		"1": "ukyo:items/dark_repulser/dark_repulser1",
+		"2": "ukyo:items/dark_repulser/dark_repulser2",
+		"3": "ukyo:items/dark_repulser/dark_repulser3",
+		"particle": "ukyo:items/dark_repulser/dark_repulser2"
 	},
 	"elements": [
 		{

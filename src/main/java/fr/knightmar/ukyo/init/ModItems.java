@@ -1,8 +1,10 @@
 package fr.knightmar.ukyo.init;
 
 import com.google.common.collect.Lists;
+import fr.knightmar.ukyo.Ukyo;
 import fr.knightmar.ukyo.items.BaseItem;
 import fr.knightmar.ukyo.items.SwordTool;
+import fr.knightmar.ukyo.utils.ItemsTab;
 import fr.knightmar.ukyo.utils.References;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,18 +22,20 @@ public class ModItems {
 
     public static final ModItems INSTANCE = new ModItems();
 
-    public static Item diamond_stick;
-    public static Item dark_repulser;
-
     private List<Item> items;
 
     public void init() {
         items = Lists.newArrayList();
-        diamond_stick = new BaseItem("diamond_stick");
-        dark_repulser = new SwordTool("dark_repulser", Item.ToolMaterial.DIAMOND);
-        items.add(dark_repulser);
-        System.out.println("itemsArray : "+items);
+        items = registerItems();
+    }
 
+    public List<Item> registerItems() {
+        items = Lists.newArrayList();
+        items.add(new SwordTool("dark_repulser", Item.ToolMaterial.DIAMOND).setCreativeTab(Ukyo.ItemsTab));
+        items.add(new SwordTool("excalibur",Item.ToolMaterial.DIAMOND).setCreativeTab(Ukyo.ItemsTab));
+        items.add(new SwordTool("elucidator",Item.ToolMaterial.DIAMOND).setCreativeTab(Ukyo.ItemsTab));
+        items.add(new SwordTool("rapiere",Item.ToolMaterial.DIAMOND).setCreativeTab(Ukyo.ItemsTab));
+        return items;
     }
 
     @SubscribeEvent

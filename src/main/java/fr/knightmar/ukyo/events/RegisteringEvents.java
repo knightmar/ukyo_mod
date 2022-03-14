@@ -6,7 +6,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class RegisteringEvents {
-
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event){
         ModItems.INSTANCE.init();

@@ -2,7 +2,9 @@ package fr.knightmar.ukyo;
 
 import fr.knightmar.ukyo.events.RegisteringEvents;
 import fr.knightmar.ukyo.proxy.CommonProxy;
+import fr.knightmar.ukyo.utils.ItemsTab;
 import fr.knightmar.ukyo.utils.References;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -12,6 +14,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = References.MODID, name = References.NAME, version = References.VERSION)
 public class Ukyo {
+
+    public static final CreativeTabs ItemsTab = new ItemsTab("itemstab");
 
     @Mod.Instance(References.MODID)
     public static Ukyo instance;
