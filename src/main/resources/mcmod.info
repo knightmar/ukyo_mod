@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ukyo",
+  "name": "Ukyo Mod",
+  "description": "Un mod pour le serv Ukyo",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["knightmar"],
+  "credits": "Propriété totale au server Ukyo",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
